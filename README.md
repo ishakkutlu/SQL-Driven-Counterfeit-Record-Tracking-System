@@ -1,22 +1,36 @@
-# Scalable Concept Database System for Efficient Counterfeit Tracking
+# SQL-Driven Counterfeit Record Tracking System
 
-Developed a comprehensive database system to track and report counterfeit currency using SQL and C#. Demonstrated advanced SQL querying, database design, and efficient data management techniques. Implemented essential database operations such as listing, adding, updating, and deleting records, effectively handling complex data structures and interactions.
+This repository contains a functional prototype focused on the core counterfeit record tracking across bank branches, combining SQL Server stored procedures with a simple C# interface. The system simulates a real institutional workflow under a simplified architecture, demonstrating real-time data validation, transactional integrity, and database synchronization through UI-triggered operations.
 
-## Key Highlights: 
+## Key Highlights:
 
-- Completed three stages of data modeling: 
-  * Conceptual: Defined high-level structure and relationships
-  * Logical: Created detailed schema design
-  * Physical: Implemented database considering performance and storage
-- Built a robust CRUD database model with stored procedures
-- Implemented error handling and data validation within SQL procedures to ensure data integrity
-- Enhanced database performance and reliability with complex transactions and synchronization control
-- Designed user-friendly interfaces in C# reducing data entry time by 40%, boosting efficiency
-- Enabled seamless data transfer from Excel to SQL Server, reducing errors by 30%
-- Secured access with user authentication and generated detailed reports
+✦ Fully normalized schema (conceptual, logical, physical)
+✦ Stored procedures for CRUD (create/insert/update/delete) operations with rollback protection
+✦ Serialization-level transactions ensuring consistency
+✦ Fully working model for simulation and testing purposes
+
+## Technical Highlights:
+
+**✦ Error Handling & Validation**  
+Implemented structured error handling and input validation within SQL procedures to ensure data consistency and prevent faulty inserts.
+
+**✦ Referential Integrity & Normalization**  
+Database schema designed with referential integrity constraints (PK–FK) and normalized structure to support clean data operations across linked tables.
+
+**✦ Stored Procedure Abstraction**  
+Encapsulated key operations (add, update, delete) in modular stored procedures for maintainability, reusability, and UI backend syncing.
+
+**✦ Transaction Management**  
+Critical updates wrapped in explicit transactions to prevent partial data saves and maintain system reliability during multi-step operations.
+
+**✦ Live UI–DB Synchronization**  
+Changes triggered via the C# interface are reflected instantly in the SQL Server backend, simulating a real-time data application.
 
 ## Tools Used in Implementation:
 
+- T-SQL
+- SQL
+- C#
 - Microsoft SQL Server Management Studio 19.0.2
 - Microsoft Visual Studio Community 2022 (64-bit), Version 17.6.2
 - Microsoft Net Framework Version 4.8.04084
