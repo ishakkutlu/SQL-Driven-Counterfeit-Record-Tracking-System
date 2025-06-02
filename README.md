@@ -4,10 +4,10 @@ This repository contains a functional prototype focused on the core counterfeit 
 
 ## Key Highlights:
 
-✦ Fully normalized schema (conceptual, logical, physical)
-✦ Stored procedures for CRUD (create/insert/update/delete) operations with rollback protection
-✦ Serialization-level transactions ensuring consistency
-✦ Fully working model for simulation and testing purposes
+- Fully normalized schema (conceptual, logical, physical)
+- Stored procedures for CRUD (create/insert/update/delete) operations with rollback protection
+**✦ Serialization-level transactions ensuring consistency
+**✦ Fully working model for simulation and testing purposes
 
 ## Technical Highlights:
 
