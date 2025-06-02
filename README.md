@@ -32,9 +32,15 @@ Changes triggered via the C# interface are reflected instantly in the SQL Server
 
 ## Tools Used in Implementation:
 
-- T-SQL
-- SQL
-- C#
-- Microsoft SQL Server Management Studio 19.0.2
-- Microsoft Visual Studio Community 2022 (64-bit), Version 17.6.2
-- Microsoft Net Framework Version 4.8.04084
+✦ T-SQL
+
+✦ SQL
+
+✦ C#
+
+✦ Microsoft SQL Server Management Studio 19.0.2
+
+✦ Microsoft Visual Studio Community 2022 (64-bit), Version 17.6.2
+
+✦ Microsoft Net Framework Version 4.8.04084
+
