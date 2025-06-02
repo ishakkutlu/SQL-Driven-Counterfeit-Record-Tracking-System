@@ -1,6 +1,6 @@
 # SQL-Driven Counterfeit Record Tracking System
 
-This repository contains a functional prototype focused on the core counterfeit record tracking across bank branches, combining SQL Server stored procedures with a simple C# interface. The system simulates a real institutional workflow under a simplified architecture, demonstrating real-time data validation, transactional integrity, and database synchronization through UI-triggered operations.
+This repository contains a functional prototype focused on the core counterfeit record tracking across bank branches, combining SQL Server stored procedures with a set of simple C# interfaces. The system simulates a real institutional workflow under a simplified architecture, demonstrating real-time data validation, transactional integrity, and database synchronization through UI-triggered operations.
 
 ## Key Highlights:
 
@@ -8,7 +8,6 @@ This repository contains a functional prototype focused on the core counterfeit 
 - Stored procedures for CRUD (create/insert/update/delete) operations with rollback protection
 - Serialization-level transactions ensuring consistency
 - Fully working model for simulation and testing purposes
-
 
 ## Technical Highlights:
 
