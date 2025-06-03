@@ -27,8 +27,7 @@ Critical updates wrapped in explicit transactions to prevent partial data saves 
 Changes triggered via the C# interface are reflected instantly in the SQL Server backend, simulating a real-time data application.
 
 ## Screenshots – Prototype in Action
-<details>
-  <summary>Click to expand UI Screenshots</summary>
+
 ---
 
 ### 01. Initial Counterfeit Records in SQL Server  
@@ -57,37 +56,65 @@ Changes triggered via the C# interface are reflected instantly in the SQL Server
 
 ---
 
-### 04 New Record Reflected in UI
+### 04. New Counterfeit Record Reflected in UI
+- The newly added counterfeit record is now visible in the application interface. 
+- This confirms that the form submission was successful and that the record passed validation before being stored in the database.
+- Backend-level checks ensure only valid records appear in the interface after being safely committed.
+
 ![04 New Record Reflected in UI](media/04_New_Record_Reflected_in_UI.png)
 
 ---
 
-### 05 New Record Confirmed in SQL Server
+### 05. New Record Confirmed in SQL Server Output
+- The new record is now visible in the SQL Server query output. 
+- This confirms that the data entry form has successfully written the validated record into the backend database using a stored procedure.
+- The procedure enforces data integrity through validation logic, error handling, and rollback control.
+
 ![05 New Record Confirmed in SQL Server](media/05_New_Record_Confirmed_in_SQL_Server.png)
 
 ---
 
-### 06 Update Panel
+### 06. Update Panel – Record Editing Interface
+- Users can open the update panel by double-clicking a record or selecting it and clicking the “Edit” button (“Değiştir” in UI). 
+- The form auto-fills with the selected record’s data. 
+- In this example, report code 202310 is being updated to 202317. After changes, clicking the “Update” button (“Güncelle” in UI) triggers a stored procedure with backend validation and error handling.
+
 ![06 Update Panel](media/06_Update_Panel.png)
 
 ---
 
-### 07 Updated Record Reflected in UI 
+<details>
+  <summary>Click to expand UI Screenshots</summary>
+  
+### 07. Updated Record Reflected in Interface
+- After editing, the updated record (report code changed from 202310 to 202317) is now visible in the application interface. 
+- This confirms that the update request was successfully processed and that the viewer panel reflects the latest data state.
+
 ![07 Updated Record Reflected in UI](media/07_Updated_Record_Reflected_in_UI.png)
 
 ---
 
-### 08 Updated Record Confirmed in SQL Server  
+### 08. Updated Record Confirmed in SQL Server
+- The same record with updated report code (202317) is now visible in the SQL Server query output. 
+- This confirms that the change was executed at the database level through a stored procedure, preserving consistency and integrity.
+
 ![08 Updated Record Confirmed in SQL Server](media/08_Updated_Record_Confirmed_in_SQL_Server.png)
 
 ---
 
-### 09 Delete Request
+### 09. Delete Request Triggered from Viewer Panel
+- To delete a record, the user selects it in the viewer panel and clicks the “Delete” button (labeled as “Sil” in UI). 
+- The system prompts a confirmation dialog before proceeding. 
+- In this example, the user is attempting to delete the record with report code 20232.
+
 ![09 Delete Request](media/09_Delete_Request.png)
 
 ---
 
-### 10 Delete Operation Confirmed in UI
+### 10. Delete Operation Confirmed in UI
+- After the user confirmed the deletion, the record with report code 20232 was successfully removed from the interface.
+- A confirmation message is displayed, indicating the operation was completed via a backend-stored procedure with validation.
+
 ![10 Delete Operation Confirmed in UI](media/10_Delete_Operation_Confirmed_in_UI.png)
 
 ---
