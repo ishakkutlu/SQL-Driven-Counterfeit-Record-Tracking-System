@@ -4,10 +4,12 @@ This repository contains a functional prototype focused on the core counterfeit 
 
 ## Key Highlights:
 
-- Fully normalized schema (conceptual, logical, physical)
-- Stored procedures for CRUD (create/insert/update/delete) operations with rollback protection
-- Serialization-level transactions ensuring consistency
+- Normalized database schema (conceptual, logical, physical)
+- Transaction-safe CRUD (create/insert/update/delete) procedures with SERIALIZABLE isolation
+- Real-time input validation and error handling at the SQL level
+- Synchronization between database state and UI via trigger-based updates
 - Fully working model for simulation and testing purposes
+- Stack: MS SQL Server, T-SQL, C#, .NET Framework, WinForms
 
 ## Technical Highlights:
 
