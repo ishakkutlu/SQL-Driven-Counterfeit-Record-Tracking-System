@@ -28,53 +28,98 @@ Changes triggered via the C# interface are reflected instantly in the SQL Server
 
 ## Screenshots – Prototype in Action
 
-**01 Initial Counterfeit Records**  
+---
+
+### 01. Initial Counterfeit Records in SQL Server  
+- System-level query displays current counterfeit records stored in SQL Server. 
+- Each row corresponds to a user-entered banknote report with unique ID, detection type, currency, denomination, and serial information.
+
 ![01 Initial Counterfeit Records](media/01_Initial_Counterfeit_Records.png)
 
-**02 Viewer Panel**  
+---
+
+### 02. Viewer Panel – Real-Time Sync with SQL Server
+- Displays counterfeit banknote records retrieved from SQL Server. 
+- The “Refresh” button (labeled “Yenile” in the UI) triggers synchronization, ensuring the interface reflects the most recent database state. 
+- Enables users to review, verify, and access record details instantly.
+
 ![02 Viewer Panel](media/02_Viewer_Panel.png)
 
-**03 New Record Entry**  
-![03 New Record Entry](./03_New_Record_Entry.png)
+---
 
-**04 New Record Reflected in UI**  
-![04 New Record Reflected in UI](./04_New_Record_Reflected_in_UI.png)
+### 03. New Record Entry – Ready to Submit
+- Upon clicking the “Add” button (labeled as “Ekle” in UI) in the viewer panel, this form allows users to create a new counterfeit banknote record. 
+- All required fields—including report ID, denomination, serial number, and date—are properly filled. 
+- The record will be submitted to SQL Server, triggered by clicking the “Save” button (“Kaydet” in UI).
 
-**05 New Record Confirmed in SQL Server**  
-![05 New Record Confirmed in SQL Server](./05_New_Record_Confirmed_in_SQL_Server.png)
+![03 New Record Entry](media/03_New_Record_Entry.png)
 
-**06 Update Panel**  
-![06 Update Panel](./06_Update_Panel.png)
+---
 
-**07 Updated Record Reflected in UI**  
-![07 Updated Record Reflected in UI](./07_Updated_Record_Reflected_in_UI.png)
+### 04 New Record Reflected in UI
+![04 New Record Reflected in UI](media/04_New_Record_Reflected_in_UI.png)
 
-**08 Updated Record Confirmed in SQL Server**  
-![08 Updated Record Confirmed in SQL Server](./08_Updated_Record_Confirmed_in_SQL_Server.png)
+---
 
-**09 Delete Request**  
-![09 Delete Request](./09_Delete_Request.png)
+### 05 New Record Confirmed in SQL Server
+![05 New Record Confirmed in SQL Server](media/05_New_Record_Confirmed_in_SQL_Server.png)
 
-**10 Delete Operation Confirmed in UI**  
-![10 Delete Operation Confirmed in UI](./10_Delete_Operation_Confirmed_in_UI.png)
+---
 
-**11 Deleted Record Reflected in SQL Server**  
-![11 Deleted Record Reflected in SQL Server](./11_Deleted_Record_Reflected_in_SQL_Server.png)
+### 06 Update Panel
+![06 Update Panel](media/06_Update_Panel.png)
 
-**12 Validation Alert**  
-![12 Validation Alert](./12_Validation_Alert.png)
+---
 
-**13 Duplicate Entry Prevented – Add Operation**  
-![13 Duplicate Entry Prevented – Add Operation](./13_Duplicate_Entry_Prevented_Add_Operation.png)
+### 07 Updated Record Reflected in UI 
+![07 Updated Record Reflected in UI](media/07_Updated_Record_Reflected_in_UI.png)
 
-**14 Duplicate Entry Prevented – Update Operation**  
-![14 Duplicate Entry Prevented – Update Operation](./14_Duplicate_Entry_Prevented_Update_Operation.png)
+---
 
-**15 Conceptual Data Model**  
-![15 Conceptual Data Model](./15_Conceptual_Data_Model.png)
+### 08 Updated Record Confirmed in SQL Server  
+![08 Updated Record Confirmed in SQL Server](media/08_Updated_Record_Confirmed_in_SQL_Server.png)
 
-**16 Logical Data Model**  
-![16 Logical Data Model](./16_Logical_Data_Model.png)
+---
+
+### 09 Delete Request
+![09 Delete Request](media/09_Delete_Request.png)
+
+---
+
+### 10 Delete Operation Confirmed in UI
+![10 Delete Operation Confirmed in UI](media/10_Delete_Operation_Confirmed_in_UI.png)
+
+---
+
+### 11 Deleted Record Reflected in SQL Server 
+![11 Deleted Record Reflected in SQL Server](media/11_Deleted_Record_Reflected_in_SQL_Server.png)
+
+---
+
+### 12 Validation Alert
+![12 Validation Alert](media/12_Validation_Alert.png)
+
+---
+
+### 13 Duplicate Entry Prevented – Add Operation
+![13 Duplicate Entry Prevented – Add Operation](media/13_Duplicate_Entry_Prevented_Add_Operation.png)
+
+---
+
+### 14 Duplicate Entry Prevented – Update Operation 
+![14 Duplicate Entry Prevented – Update Operation](media/14_Duplicate_Entry_Prevented_Update_Operation.png)
+
+---
+
+### 15 Conceptual Data Model
+![15 Conceptual Data Model](media/15_Conceptual_Data_Model.png)
+
+---
+
+### 16 Logical Data Model
+![16 Logical Data Model](media/16_Logical_Data_Model.png)
+
+---
 
 ## Tools Used in Implementation:
 
