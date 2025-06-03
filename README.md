@@ -29,10 +29,10 @@ Changes triggered via the C# interface are reflected instantly in the SQL Server
 ## Screenshots – Prototype in Action
 
 **01 Initial Counterfeit Records**  
-![01 Initial Counterfeit Records](./01_Initial_Counterfeit_Records.png)
+![01 Initial Counterfeit Records](media/01_Initial_Counterfeit_Records.png)
 
 **02 Viewer Panel**  
-![02 Viewer Panel](./02_Viewer_Panel.png)
+![02 Viewer Panel](media/02_Viewer_Panel.png)
 
 **03 New Record Entry**  
 ![03 New Record Entry](./03_New_Record_Entry.png)
