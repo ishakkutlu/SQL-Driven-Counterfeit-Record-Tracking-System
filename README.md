@@ -84,7 +84,7 @@ Changes triggered via the C# interface are reflected instantly in the SQL Server
 ---
 
 <details>
-  <summary>Click to expand UI Screenshots</summary>
+  <summary>**Click to expand UI Screenshots**</summary>
   
 ### 07. Updated Record Reflected in Interface
 - After editing, the updated record (report code changed from 202310 to 202317) is now visible in the application interface. 
@@ -119,32 +119,52 @@ Changes triggered via the C# interface are reflected instantly in the SQL Server
 
 ---
 
-### 11 Deleted Record Reflected in SQL Server 
+### 11. Deleted Record No Longer in SQL Server Output
+- The same record (report code 20232) no longer appears in the SQL Server query result. 
+- This confirms that the deletion was successfully executed at the database level, maintaining consistency across layers. 
+
 ![11 Deleted Record Reflected in SQL Server](media/11_Deleted_Record_Reflected_in_SQL_Server.png)
 
 ---
 
-### 12 Validation Alert
+### 12. Validation Alert – Required Field Missing
+- When a required field (e.g., Nominal Value) is left empty, the system blocks submission and alerts the user.
+- This check is enforced both at the UI level and within the SQL stored procedure, ensuring robust validation.
+
 ![12 Validation Alert](media/12_Validation_Alert.png)
 
 ---
 
-### 13 Duplicate Entry Prevented – Add Operation
+### 13. Duplicate Entry Prevented – Add Operation
+- If a user attempts to create a record with an already existing report code, the system prevents duplication.
+- The control is executed via a backend procedure that checks primary key constraints and maintains uniqueness.
+
 ![13 Duplicate Entry Prevented – Add Operation](media/13_Duplicate_Entry_Prevented_Add_Operation.png)
 
 ---
 
-### 14 Duplicate Entry Prevented – Update Operation 
+### 14. Duplicate Entry Prevented – Update Operation
+- When updating a record, if the new report code already exists in the system, the update is rejected.
+- This preserves key integrity and avoids accidental overwrites, enforced by SQL-level validation.
+
 ![14 Duplicate Entry Prevented – Update Operation](media/14_Duplicate_Entry_Prevented_Update_Operation.png)
 
 ---
 
-### 15 Conceptual Data Model
+### 15. Conceptual Data Model – Entity-Relationship Design
+- The ER diagram illustrates the conceptual design of the counterfeit tracking system. 
+- It maps key entities such as Bank, Personnel, Institution, and Report Types (Judicial/Police), and shows their relationships. 
+- This structure is based on a partial yet realistic representation of institutional workflows, and is designed to be extendable for advanced reporting needs.
+
 ![15 Conceptual Data Model](media/15_Conceptual_Data_Model.png)
 
 ---
 
-### 16 Logical Data Model
+### 16. Relational Schema – Logical Data Structure
+- This relational schema represents the logical data structure derived from the conceptual model. 
+- It defines tables, keys, and foreign key relationships among institutions, banknote counterfeit records, personnel, and administrative entities. 
+- Designed for scalability and normalization, the model forms the technical backbone of the system.
+
 ![16 Logical Data Model](media/16_Logical_Data_Model.png)
 
 ---
