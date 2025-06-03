@@ -10,6 +10,7 @@ AS
 BEGIN
     BEGIN TRY
         BEGIN TRANSACTION TR01;
+	SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
 
         IF NOT EXISTS (SELECT 1 FROM Sahtecilik_Raporu WHERE Rapor_Kodu = @Rapor_Kodu)
             RAISERROR ('Silinecek kayıt bulunamadı.', 16, 10);
