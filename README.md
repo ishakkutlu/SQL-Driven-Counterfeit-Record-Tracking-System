@@ -35,3 +35,5 @@ Changes triggered via the C# interface are reflected instantly in the SQL Server
 - Microsoft Visual Studio Community 2022 (64-bit), Version 17.6.2
 - Microsoft Net Framework Version 4.8.04084
 
+Note: The C# code provided here is minimal and serves only to simulate data flow between the UI and the SQL backend. The focus of this project is on the SQL architecture, data integrity, and stored procedure logic.
+
