@@ -27,7 +27,8 @@ Critical updates wrapped in explicit transactions to prevent partial data saves 
 Changes triggered via the C# interface are reflected instantly in the SQL Server backend, simulating a real-time data application.
 
 ## Screenshots – Prototype in Action
-
+<details>
+  <summary>Click to expand UI Screenshots</summary>
 ---
 
 ### 01. Initial Counterfeit Records in SQL Server  
@@ -120,6 +121,8 @@ Changes triggered via the C# interface are reflected instantly in the SQL Server
 ![16 Logical Data Model](media/16_Logical_Data_Model.png)
 
 ---
+
+</details>
 
 ## Tools Used in Implementation:
 
