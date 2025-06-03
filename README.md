@@ -84,7 +84,7 @@ Changes triggered via the C# interface are reflected instantly in the SQL Server
 ---
 
 <details>
-  <summary>**Click to expand UI Screenshots**</summary>
+  <summary>Click to expand UI Screenshots</summary>
   
 ### 07. Updated Record Reflected in Interface
 - After editing, the updated record (report code changed from 202310 to 202317) is now visible in the application interface. 
